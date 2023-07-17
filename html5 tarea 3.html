@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Formulario de Información</h1>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escriba aquí su nombre..." required><br><br>
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal"><br><br>
+    
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required><br><br>
+    
+    <label for="hora">Tiempo u Hora:</label>
+    <input type="time" id="hora" name="hora" required><br><br>
+    
+    <label for="ciudad">Ciudad:</label>
+    <input list="ciudades" id="ciudad" name="ciudad">
+    <datalist id="ciudades">
+      <option value="San Lorenzo">
+      <option value="CDE">
+      <option value="Asuncion">
+    </datalist><br><br>
+    
+    <label for="numero">Número:</label>
+    <input type="number" id="numero" name="numero" min="-10" max="10" required><br><br>
+    
+    <label for="busqueda">Término de búsqueda:</label>
+    <input type="search" id="busqueda" name="busqueda" required><br><br>
+    
+    <label for="color">Color favorito:</label>
+    <input type="color" id="color" name="color" required><br><br>
+    
+    <label for="fichero">Fichero:</label>
+    <input type="file" id="fichero" name="fichero" multiple><br><br>
+    
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" placeholder="Escriba aquí su mensaje..." rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
